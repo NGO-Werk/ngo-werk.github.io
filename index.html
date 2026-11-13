@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Resume - Jhansi Pailla</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Jhansi Pailla - Personal Website" />
+  <meta name="description" content="Jhansi Bheemidi — GIS Software Developer. Resume, projects, and contact information.">
+  <!-- JSON-LD structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Jhansi Pailla",
+    "url": "https://jhansi.jirawiser.online/",
+    "jobTitle": "Software Engineer",
+    "sameAs": [
+      "https://github.com/jp106",
+      "https://www.linkedin.com/in/jhansipailla"
+    ]
+  }
+  </script>
+  <!-- <title>Jhansi Bheemidi | Personal Website</title> -->
+  <style>
+    :root{
+      --bg:#f6f7fb; --card:#fff; --muted:#6b7280; --accent:#0ea5a4;
+      --paper-width:900px;
+      --print-margin:20mm;
+      color-scheme: light;
+      font-family: Inter, Roboto, system-ui, -apple-system, "Segoe UI", "Helvetica Neue", Arial;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0;background:linear-gradient(180deg, var(--bg), #eef2f7 60%);font-size:16px}
+    .wrap{max-width:var(--paper-width);margin:32px auto;padding:24px}
+    .resume{
+      background:var(--card);
+      border-radius:12px;
+      box-shadow:0 8px 30px rgba(16,24,40,0.08);
+      overflow:hidden;
+      display:grid;
+      grid-template-columns: 320px 1fr;
+      min-height:540px;
+    }
+
+    /* Left column (profile) */
+    .side{
+      background:linear-gradient(180deg, #fff, #fbfdfe);
+      padding:28px;
+      border-right:1px solid #eef2f6;
+      display:flex;
+      flex-direction:column;
+      gap:18px;
+    }
+    h1{font-size:20px;margin:0 0 4px 0}
+    .title{color:var(--muted);font-weight:600;font-size:13px;margin-bottom:10px}
+    .contact, .skills, .education{background:transparent;padding:6px 0}
+    .contact li, .skills li, .education li{list-style:none;margin:8px 0;color:var(--muted);font-size:14px;display:flex;gap:8px;align-items:center}
+    .label{font-weight:700;color:#111;min-width:72px;font-size:13px}
+
+    /* Right column (content) */
+    .main{padding:28px 32px;display:flex;flex-direction:column;gap:18px}
+    .section{margin-bottom:6px}
+    .section h2{font-size:16px;margin:0 0 10px 0;display:flex;align-items:center;gap:8px}
+    .summary{color:var(--muted);font-size:15px;line-height:1.45}
+    .job{padding:12px;border-radius:8px;background:#fbfdff;border:1px solid #eef6f7}
+    .job .row{display:flex;justify-content:space-between;gap:12px;align-items:flex-start}
+    .job h3{margin:0;font-size:15px}
+    .job .meta{color:var(--muted);font-size:13px}
+    .bullets{margin:8px 0 0 16px;color:var(--muted);font-size:14px}
+    .skills-list{display:flex;flex-wrap:wrap;gap:8px}
+    .chip{background:#f1f6f6;padding:6px 10px;border-radius:999px;font-size:13px;color:#07494a}
+
+    /* Footer small details */
+    .small{color:var(--muted);font-size:13px}
+
+    /* Responsive */
+    @media (max-width:880px){
+      .resume{grid-template-columns:1fr;min-height:unset}
+      .side{order:2;border-right:0;border-top:1px solid #eef2f6}
+    }
+
+    /* Print-friendly */
+    @media print{
+      body{background:white}
+      .wrap{margin:0}
+      .resume{box-shadow:none;border-radius:0}
+      @page{size: auto; margin: var(--print-margin)}
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="resume" role="document" aria-label="Resume">
+      <aside class="side" aria-label="Profile">
+        <div>
+          <h1>Jhansi Bheemidi</h1>
+          <div class="title">Senior GIS Consultant </div>
+        </div>
+
+        <div class="contact">
+          <ul>
+            <li><span class="label">Email</span><span>jhansitheplanz@gmail.com</span></li>
+            <!-- <li><span class="label">Phone</span><span></span></li> -->
+            <li><span class="label">Location</span><span>Netherlands</span></li>
+          </ul>
+        </div>
+
+        <div class="skills">
+          <h3 class="small">Skills</h3>
+          <div class="skills-list">
+            <div class="chip">Wordpress</div>
+            <div class="chip">Google Workspace</div>
+            <div class="chip">Microsoft 365</div>
+            <div class="chip">Jira</div>
+            <div class="chip">Linux</div>
+            <div class="chip">Python</div>
+            <div class="chip">C#</div>
+            <div class="chip">JavaScript</div>
+            <div class="chip">ArcGIS Online</div>
+
+          </div>
+        </div>
+
+        <div class="education">
+          <h3 class="small">Education</h3>
+          <ul>
+            <li>
+              <div><strong>M.S. GIS</strong></div>
+              <div class="small">Eastern Michigan University, Ypsilanti, MI, USA — 2008</div>
+            </li>
+            <li>
+              <div><strong>BTech Planning</strong></div>
+              <div class="small">Jawaharlal Nehru Technological University, Hyderabad, Telangana, India — 2005</div>
+            </li>
+          </ul>
+        </div>
+        <div class="education">
+          <h3 class="small">Certifications</h3>
+          <ul>
+            <li>
+              <img src="media/ArcGISDesktopDevAssociate.png" alt="Esri Certified Developer Associate badge with globe icon and green background" width="50%" height="auto">              
+            </li>
+          </ul>
+        </div>
+        <div class="education">
+          <h3 class="small">Presentations</h3>
+          <ul>
+            <li>
+              <img src="https://cdn.pretix.cloud/2/pub/thumbs/bad64e6f6fc5a2c06719bafa10599d0a.5000x120.6668522621c330.png" alt="FOSS4GNL logo with blue and green background" width="50%" height="auto">
+              <div class="small"><a href="https://pretalx.com/foss4gnl/speaker/UC7NEZ/" target="_blank" rel="noopener noreferrer">Comparing Data Integration features across GIS platforms<br>Groningen — July 2026</a></div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="small" style="margin-top:auto">Available on contract, fully remote</div>
+      </aside>
+
+      <main class="main" aria-label="Experience and Projects">
+        <section class="section">
+          <h2>Summary</h2>
+          <p class="summary">Senior GIS Professional, who has worked with NGOs to manage their WordPress sites end-to-end and administer Google Workspace and Microsoft 365 (users, MFA, permissions). </p>
+        </section>
+
+        <section class="section">
+          <h2>Recent Professional Experience and NGO Work</h2>
+
+          <article class="job" aria-label="Job — Previous">
+            <div class="row">
+              <div>
+                <h3>Webmaster - Fietsersbond</h3>
+                <div class="meta">May 2026 — Present</div>
+              </div>
+              <div class="meta">Virginia, USA</div>
+            </div>
+            <ul class="bullets">
+              <li>Oversee the organization’s WordPress website, managing and updating its content and functionality.</li>
+              <li>Maintain the Kit newsletter platform to support ongoing communications with its audience.</li>
+            </ul>
+          </article>
+          <article class="job" aria-label="Job — Current">
+            <div class="row">
+              <div>
+                <h3>Esri Technology Developer — Avineon Tensing</h3>
+                <div class="meta">March 2019 — Jan 2026</div>
+              </div>
+              <div class="meta">Utrecht, Netherlands</div>
+            </div>
+            <div class="row">
+            <h2>Technical Integrations Lead (Eversource, GIS Consolidation, System Integration & Upgrade)</h2>
+            </div>
+            <ul class="bullets">
+              <li>Led cross‑enterprise GIS integration efforts, designed and delivered integration solutions, and presented progress and technical recommendations to stakeholders in an Agile environment.</li>
+              <li>Coordinated implementation with internal engineers and partner teams across multiple time zones to ensure on‑time, high‑quality releases.</li>
+              <li>Coordinated with QA and operations teams to schedule automated promotions, document the process</li>
+              <li>Facilitated technical and functional workshops with customer, partner, GIS, IT, and operations teams</li>
+            </ul>
+          </article>
+
+          <article class="job" aria-label="Job — Previous">
+            <div class="row">
+              <div>
+                <h3>Humanitarian Mapper — Humanitarian OpenStreetMap Team</h3>
+                <div class="meta">April 2015 — April 2016</div>
+              </div>
+              <div class="meta">Atlanta, USA</div>
+            </div>
+            <ul class="bullets">
+              <li>Contributed remote OpenStreetMap mapping for humanitarian and disaster-response projects, including malaria-program mapping in Botswana and crisis mapping in Nepal and Japan. </li>
+            </ul>
+          </article>
+          <article class="job" aria-label="Job — Previous">
+            <div class="row">
+              <div>
+                <h3>GIS Volunteer — MapSwipe</h3>
+                <div class="meta">Dec 2014 — Sep 2015</div>
+              </div>
+              <div class="meta">Detroit, USA</div>
+            </div>
+            <ul class="bullets">
+              <li>Volunteered remotely with MapSwipe, helping map vulnerable communities through mobile contributions as part of the Missing Maps project.</li>
+              
+            </ul>
+          </article>
+          <article class="job" aria-label="Job — Previous">
+            <div class="row">
+              <div>
+                <h3>Board member and Webmaster - Dunwoody community Garden and Orchard</h3>
+                <div class="meta">Sept 2014 — April 2018</div>
+              </div>
+              <div class="meta">Atlanta, USA</div>
+            </div>
+            <ul class="bullets">
+              <li>Served on the board while managing its website and blog</li>
+              <li>Coordinated monthly and annual events, supporting the organization’s communications, operations, and community engagement.</li>
+                </ul>
+          </article>
+          <article class="job" aria-label="Job — Previous">
+            <div class="row">
+              <div>
+                <h3>GIS Volunteer — URISA’s GISCorps</h3>
+                <div class="meta">Dec 2014 — Sep 2015</div>
+              </div>
+              <div class="meta">Michigan, USA</div>
+            </div>
+            <ul class="bullets">
+              <li>Volunteered with URISA’s GISCorps on disaster and humanitarian relief initiatives, including GeoTag-X, a crowdsourcing project supporting the United Nations.</li>
+            </ul>
+          </article>
+          <article class="job" aria-label="Job — Previous">
+            <div class="row">
+              <div>
+                <h3>GIS Volunteer — Ekal Vidyalaya</h3>
+                <div class="meta">April 2015 — April 2016</div>
+              </div>
+              <div class="meta">Remote</div>
+            </div>
+            <ul class="bullets">
+              <li>Developed a public-facing GIS application showcasing Ekal Vidyalaya’s statewide school data, including boys’ and girls’ enrollment by district, for employees, volunteers, and sponsors.</li>
+            </ul>
+          </article>
+          <article class="job" aria-label="Job — Previous">
+            <div class="row">
+              <div>
+                <h3>Emannuel Community Farm - Webmaster </h3>
+                <div class="meta">April 2015 — April 2016</div>
+              </div>
+              <div class="meta">Remote</div>
+            </div>
+            <ul class="bullets">
+              <li>Managed the website and online presence for Emmanuel Community Farm, ensuring content was up-to-date and engaging for visitors </li>
+              <li>Supported communications for its all-volunteer initiative to provide food to people in need across southeast Michigan.</li>
+            </ul>
+          </article>
+        </section>
+        <section class="section">
+          <h2>Additional</h2>
+          <ul class="bullets">
+            <li>Languages: Telugu (native), English (professional), Dutch (B1), Hindi (professional)</li>
+            <li>Interests: Open-source contribution, Gardening, Webmastering for NGOs and small businesses </li>
+          </ul>
+        </section>
+      </main>
+    </div>
+  </div>
+</body>
+</html>
